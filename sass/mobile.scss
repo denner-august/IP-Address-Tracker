@@ -1,0 +1,18 @@
+@media screen and (max-width:570px){
+    main{
+        #pesquisa{
+            flex-direction: column;
+            height: auto;
+
+            #informa{
+                height: auto;
+            }
+        }
+
+        #mapid{
+            height: 100%;
+        }
+
+       
+    }
+}

@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+main{
+$width:255px;
+$heigth:40px;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+    
+    #pesquisa{
+        display: flex;
+        height: 30vh;
+        background-image: url(../images/pattern-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 10px;
+        align-items: center;
+        justify-content: space-around;
+
+        #container{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        h1{
+            color: white;
+        }
+
+        input, button{
+            margin: 5px;
+            width: $width;
+            height: $heigth;
+        }      
+
+        
+    #informa{
+        $padding-r: 10px;
+        $heigth:40;
+        $border-r: 1px solid white;
+        $margin-p:10px;
+        
+        display: flex;
+        align-items: center;
+        height: 25vh;
+        width: auto;
+        font-size: 20px;
+        
+        p{
+            display: flex;
+            align-items: center;
+           
+        }
+
+        .p-estilo{
+            padding-right: $padding-r;
+            height: $heigth;
+            border-right: $border-r;
+            margin: $margin-p;
+        }
+        
+        .f-estilo{
+            margin:$margin-p;
+        }
+    }
+
+    }
+
+    #mapid{
+       
+     
+        height: 70vh;
+    }
+}
+

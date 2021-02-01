@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./sass/style.css">
+    <link rel="stylesheet" href="./sass/mobile.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+  
+  </head>
+  <body>
+    <main>
+      <div id="pesquisa">
+        <div id="container">
+          <h1>Que cep é este?</h1>
+          <input placeholder="Digite o cep junto sem -" autocomplete="off" type="text" name="cep" id="cep" maxlength="8">
+          <button id="button">informações</button>
+      </div>
+        <div id="informa">
+          <p id="informe-distrito" class="p-estilo"></p>
+          <p id="informa-cidade" class="p-estilo"></p>
+          <P id="estado" class="f-estilo"></P>
+        </div>
+      </div>
+     
+
+      <div id="mapid">
+        
+      </div>
+
+    </main>
+
+    
+    <script src="./javascript/map.js" async defer></script>
+    <script src="./javascript/cep.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    
+  </body>
+</html>
+

@@ -1,0 +1,16 @@
+@media screen and (max-width: 570px) {
+  main #pesquisa {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  main #pesquisa #informa {
+    height: auto;
+  }
+  main #mapid {
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */

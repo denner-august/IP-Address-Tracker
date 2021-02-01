@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+main #pesquisa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30vh;
+  background-image: url(../images/pattern-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main #pesquisa #container {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #pesquisa h1 {
+  color: white;
+}
+
+main #pesquisa input, main #pesquisa button {
+  margin: 5px;
+  width: 255px;
+  height: 40px;
+}
+
+main #pesquisa #informa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 25vh;
+  width: auto;
+  font-size: 20px;
+}
+
+main #pesquisa #informa p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #pesquisa #informa .p-estilo {
+  padding-right: 10px;
+  height: 40;
+  border-right: 1px solid white;
+  margin: 10px;
+}
+
+main #pesquisa #informa .f-estilo {
+  margin: 10px;
+}
+
+main #mapid {
+  height: 70vh;
+}
+/*# sourceMappingURL=style.css.map */
