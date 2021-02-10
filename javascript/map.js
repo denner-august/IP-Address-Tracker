@@ -1,9 +1,17 @@
-fetch("https://geo.ipify.org/api/v1?apiKey=at_w29tOrhDbl0LgNoCdgA1cuciKB5Si&ipAddress=").then(Response =>{return Response.json()}).then(json =>{function teste(){
-     return json.location
-}
-        var latitude = (json.location.lat)
-        var longitude = (json.location.lng)
+function pegarLocalizacao(){
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(mostralocal);
+    }
+    else{
+        alert('seu navegador não suporta esse recurso')
+    }
 
+    function mostralocal(posicao){
+        var latitude = posicao.coords.latitude
+        var longitude = posicao.coords.longitude
+        console.log(navigator.permissions)
+
+        
 const zoom = 13
 var mymap = L.map('mapid').setView([latitude, longitude], zoom);
 var marker = L.marker([latitude, longitude]).addTo(mymap);
@@ -17,9 +25,9 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'your.mapbox.access.token'
 }).addTo(mymap);
 
-marker.bindPopup("<b>Ola viajante</b><br>Vocês está aqui.").openPopup();
-
-})
+marker.bindPopup("<b>Ola viajante</b><br>Vocês está aqui.").openPopup();        
+    }
+}
 
 var cep = document.getElementById("cep")
 document.getElementById('button').onclick = ()=>{
@@ -32,6 +40,4 @@ document.getElementById('button').onclick = ()=>{
         );
 };
 
-
-
-
+pegarLocalizacao()
