@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-
+#gps{
+    display: none;
+}
 
 main{
 $width:255px;
@@ -25,10 +27,12 @@ $heigth:40px;
         align-items: center;
         justify-content: space-around;
 
+
         #container{
             text-align: center;
             display: flex;
             flex-direction: column;
+            
         }
         h1{
             color: white;
