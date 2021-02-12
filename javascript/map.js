@@ -9,7 +9,7 @@ function pegarLocalizacao(){
     function mostralocal(posicao){
         var latitude = posicao.coords.latitude
         var longitude = posicao.coords.longitude
-        console.log(navigator.permissions)
+      
 
         
 const zoom = 13
@@ -38,6 +38,14 @@ document.getElementById('button').onclick = ()=>{
         document.getElementById('estado').innerText = json.city
         }
         );
+      window.localStorage.setItem("cep", cep.value)
 };
+
+if(localStorage.cep){
+    cep.value = localStorage.cep
+}
+
+
+
 
 pegarLocalizacao()
