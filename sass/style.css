@@ -55,6 +55,12 @@ main #pesquisa input, main #pesquisa button {
   margin: 5px;
   width: 255px;
   height: 40px;
+  text-align: center;
+  border: none;
+}
+
+main #pesquisa input:hover {
+  background-color: #d1d1d1;
 }
 
 main #pesquisa #informa {
@@ -76,6 +82,7 @@ main #pesquisa #informa p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: white;
 }
 
 main #pesquisa #informa .p-estilo {

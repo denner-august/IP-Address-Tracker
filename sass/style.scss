@@ -42,7 +42,12 @@ $heigth:40px;
             margin: 5px;
             width: $width;
             height: $heigth;
-        }      
+            text-align: center;
+            border:none;
+        }
+        input:hover{
+            background-color: rgb(209, 209, 209);
+        }
 
         
     #informa{
@@ -60,6 +65,7 @@ $heigth:40px;
         p{
             display: flex;
             align-items: center;
+            color: white;
            
         }
 
@@ -71,6 +77,7 @@ $heigth:40px;
         }
         
         .f-estilo{
+            
             margin:$margin-p;
         }
     }
