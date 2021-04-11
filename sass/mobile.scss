@@ -4,6 +4,13 @@
             flex-direction: column;
             height: auto;
 
+            #container{  
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+
             #informa{
                 height: auto;
             }
